@@ -22,6 +22,8 @@
 		AE927CC81DAF9F7200E8F0F4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE927CC11DAF9F5200E8F0F4 /* Nimble.framework */; };
 		AE927CCA1DAF9F7D00E8F0F4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE927CC01DAF9F5200E8F0F4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE927CCB1DAF9F7D00E8F0F4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AE927CC11DAF9F5200E8F0F4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE927CCD1DAFBA8E00E8F0F4 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE927CCC1DAFBA8E00E8F0F4 /* Station.swift */; };
+		AE927CD11DAFCF6B00E8F0F4 /* StationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE927CD01DAFCF6B00E8F0F4 /* StationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		AE927CB31DAF9E9E00E8F0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE927CC01DAF9F5200E8F0F4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AE927CC11DAF9F5200E8F0F4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AE927CCC1DAFBA8E00E8F0F4 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		AE927CD01DAFCF6B00E8F0F4 /* StationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		AE927C901DAF9E9E00E8F0F4 /* VeloCity */ = {
 			isa = PBXGroup;
 			children = (
+				AE927CCC1DAFBA8E00E8F0F4 /* Station.swift */,
 				AE927C911DAF9E9E00E8F0F4 /* AppDelegate.swift */,
 				AE927C931DAF9E9E00E8F0F4 /* ViewController.swift */,
 				AE927C951DAF9E9E00E8F0F4 /* Main.storyboard */,
@@ -152,6 +157,7 @@
 			children = (
 				AE927CA61DAF9E9E00E8F0F4 /* VeloCityTests.swift */,
 				AE927CA81DAF9E9E00E8F0F4 /* Info.plist */,
+				AE927CD01DAFCF6B00E8F0F4 /* StationTests.swift */,
 			);
 			path = VeloCityTests;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE927C941DAF9E9E00E8F0F4 /* ViewController.swift in Sources */,
+				AE927CCD1DAFBA8E00E8F0F4 /* Station.swift in Sources */,
 				AE927C921DAF9E9E00E8F0F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE927CD11DAFCF6B00E8F0F4 /* StationTests.swift in Sources */,
 				AE927CA71DAF9E9E00E8F0F4 /* VeloCityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +583,7 @@
 				AE927CB81DAF9E9E00E8F0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE927CB91DAF9E9E00E8F0F4 /* Build configuration list for PBXNativeTarget "VeloCityTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +592,7 @@
 				AE927CBB1DAF9E9E00E8F0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE927CBC1DAF9E9E00E8F0F4 /* Build configuration list for PBXNativeTarget "VeloCityUITests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +601,7 @@
 				AE927CBE1DAF9E9E00E8F0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

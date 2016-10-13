@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    let stations = ["CUSTOM HOUSE QUAY", "THE POINT", "CONVENTION CENTRE"]
+    let stations = Station.getList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = stations[indexPath.row]
+        cell.textLabel?.text = stations[indexPath.row].name
         return cell
     }
     
